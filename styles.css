@@ -1,0 +1,202 @@
+nav {
+    padding: 1.5rem 2rem;
+    background-color: #1d4e98;
+    color: #fff;
+}
+
+.checkbtn {
+    font-weight: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+#check {
+    display: none;
+}
+
+.nav-mobile {
+    display: none;
+    position: absolute;
+    top: 4.5rem;
+    left: 0;
+    background: #1d4e98;
+    z-index: 1;
+    width: 200px;
+}
+
+#check:checked ~ .nav-mobile {
+    display: block;
+}
+
+.nav-mobile a {
+    color: #fff;
+    padding: 1rem 1.5rem;
+    display: block;
+}
+
+.home-container {
+    max-width: 1000px;
+    min-height: 480px;
+    width: 90%;
+    margin: 4rem auto 0 auto;
+    text-align: center;
+    padding: 2.5rem 1.5rem;
+    box-shadow: 0 6px 24px rgba(13,38,76,0.08);
+    border-radius: 10px;
+    background: rgba(255,255,255,0.8);
+}
+
+/* Estilos para a página de login (index.html) */
+body.login-page {
+    min-height: 100vh;
+    position: relative;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    background: linear-gradient(180deg, #f6fbff 0%, #ffffff 40%);
+    color: #08306b;
+}
+
+.login-container {
+    max-width: 420px;
+    width: 90%;
+    margin: 4rem auto 0 auto;
+    text-align: center;
+    padding: 2.5rem 1.5rem;
+    box-shadow: 0 6px 24px rgba(13,38,76,0.08);
+    border-radius: 10px;
+    background: rgba(255,255,255,0.8);
+}
+
+.login-container h1 {
+    margin: 0 0 0.25rem 0;
+    font-size: 2.2rem;
+}
+.login-container h2 {
+    margin: 0 0 1.25rem 0;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #234b83;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+    padding: 0.9rem 1rem;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background: #1d4e98; 
+    color: #fff;
+    font-size: 1rem;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.04);
+}
+
+.login-form input::placeholder { color: rgba(255,255,255,0.85); }
+
+.actions {
+    display: flex;
+    gap: 0.6rem;
+    justify-content: center;
+    margin-top: 0.25rem;
+}
+
+.btn { padding: 0.7rem 1rem; border-radius: 8px; border: none; cursor: pointer; }
+.btn.primary { background: #1d4e98; color: #fff; }
+.btn.ghost { background: transparent; color: #1d4e98; border: 2px solid rgba(29,78,152,0.12); }
+
+.site-note {
+    position: absolute;
+    bottom: 12px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: #6b7280;
+    font-size: 0.95rem;
+    padding: 0 1rem;
+}
+
+.sr-only { position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+
+.debug-link { position: fixed; right: 12px; bottom: 12px; font-size: 0.85rem; color: #1d4e98; }
+
+/* Estilos para a página home com chat */
+body.home-page {
+    background: linear-gradient(180deg, #f6fbff 0%, #ffffff 40%);
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    color: #08306b;
+}
+
+.home-container h1 {
+    margin: 0 0 1.5rem 0;
+    font-size: 2rem;
+    color: #1d4e98;
+}
+
+.chat-area {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    background: #f9fafb;
+    border-radius: 8px;
+    border: 1px solid rgba(29,78,152,0.1);
+    overflow: hidden;
+}
+
+.chat-messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.chat-input-wrapper {
+    display: flex;
+    gap: 0.5rem;
+    padding: 1rem;
+    background: #f9fafb;
+    border-top: none;
+}
+
+.chat-input {
+    flex: 1;
+    padding: 0.75rem 1rem;
+    border: 1px solid rgba(29,78,152,0.2);
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    font-family: inherit;
+    transition: border-color 0.2s;
+}
+
+.chat-input:focus {
+    border-color: #1d4e98;
+    box-shadow: 0 0 0 3px rgba(29,78,152,0.1);
+}
+
+.send-btn {
+    padding: 0.75rem 1.2rem;
+    background: #1d4e98;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+}
+
+.send-btn:hover {
+    background: #15386d;
+}
+
+.send-btn:active {
+    transform: scale(0.95);
+}
