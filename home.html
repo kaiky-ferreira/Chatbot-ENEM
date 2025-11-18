@@ -4,28 +4,31 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Inicio</title>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href=" styles/styles.css">
+        <link rel="stylesheet" href="styles/styles-home.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     </head>
     <body class="home-page">
         <header class="page-header">
-            <img src="enemlogobranco.png" alt="Logo do site" class="header-logo">
+            <img src="./img/enemlogobranco.png" alt="Logo do site" class="header-logo">
         </header>
 
         <header class="profile-header"> 
-            <img src="perfil.png" alt="perfil" class="header-perfil">
+            <img src="./img/perfil.png" alt="perfil" class="header-perfil">
         </header>
         
+        <header>
         <nav id="menu">
             <input type="checkbox" id="check">
             <label for="check" class="checkbtn"><i class="fas fa-bars"></i></label>
             <div class="nav-mobile">
-                <a href="#">Home</a>
-                <a href="#">Sobre</a>
-                <a href="#">Serviços</a>
-                <a href="#">Contato</a>
+                <a href="#">Chat1</a>
+                <a href="#">Chat2</a>
+                <a href="#">Chat3</a>
+                <a href="#">Chat4</a>
             </div>
         </nav>
+
         <script>
             (function(){
                 const check = document.getElementById('check');
@@ -40,6 +43,14 @@
                 check.addEventListener('change', updateNav);
             })();
         </script>
+        </header>
+        <header id="navigation-links">
+            <a href="home.html">INÍCIO</a>  
+            <a href="simulado.html">SIMULADO</a>
+            <a href="desempenho.html">DESEMPENHO</a>
+        </header>
+
+        
         <main class="home-container">
             <h1>Assistant.ia</h1>
             
@@ -62,5 +73,6 @@
                 </div>
             </div>
         </main>
+        <a href="index.html">Debug</a>
     </body>
 </html>
